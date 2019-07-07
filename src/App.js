@@ -1,0 +1,1 @@
+import test from './css/test.scss';
