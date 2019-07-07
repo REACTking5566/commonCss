@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/App.js',
     output: {
         filename: 'App.bundle.js',
@@ -26,9 +26,13 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
-                }
+                    loader: "babel-loader",
+                },
+
             }
         ]
+    },
+    resolve: {
+        extensions: ['.jsx', '.js', '.json']
     }
 };
