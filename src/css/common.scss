@@ -1,0 +1,189 @@
+.a {
+    .b {
+        color: red;
+        border: 1px solid green;
+    }
+}
+
+///margin 
+.mb80 {
+    margin-bottom: 80px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.pt40 {
+    padding-top: 40px;
+}
+
+.mg-auto {
+    margin: 0 auto;
+}
+
+@mixin marginDymic($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+
+///border
+.has_border_bottom {
+    border-bottom: 2px solid black;
+}
+
+// table
+table {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    padding: 15px 0;
+}
+
+.tb-header {
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #81a0a0;
+
+    .text {
+        color: #fff;
+    }
+
+}
+
+// font
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3,
+h4 {
+    font-weight: 700;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+body {
+    font-family: ryo-display-plusn, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝体", YuMincho, "Yu Mincho", "ＭＳ Ｐ明朝", "MS PMincho", serif !important;
+}
+
+table {
+
+    tr {
+        th {
+            font-size: 16px;
+            line-height: 3;
+        }
+    }
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+// image
+img {
+    max-width: 100%;
+}
+
+// content
+.container {
+    // width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+///btn
+.info-more {
+    &:hover {
+        background-color: aquamarine;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.btn-wrap {
+    border: 1px solid black;
+    padding: 20px;
+    // max-width: 20%;
+    text-align: center;
+
+    &:hover {
+        background-color: #2db5aa;
+    }
+
+    a {
+        // font-size: 40px;
+        position: relative;
+
+        &:after {
+            content: ">";
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+        }
+    }
+}
+
+.btn-border {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+// bg-color
+.bg-gray {
+    background-color: #f4f9f9;
+}
+
+// flex
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+// transation
+.transition-scale {
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
