@@ -1,12 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-module.exports = {
-    mode: 'production',
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
+
+module.exports = smp.wrap({
     entry: './src/App.js',
-    output: {
-        filename: 'App.bundle.js',
-        path: path.resolve(__dirname, './'),
-    },
     plugins: [new HtmlWebpackPlugin({
         title: 'hello world',
         template: './src/index.html',
@@ -32,7 +30,12 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        watchOptions: {
+            ignored: /node_modules/
+        }
+    },
     resolve: {
         extensions: ['.jsx', '.js', '.json']
     }
-};
+});
