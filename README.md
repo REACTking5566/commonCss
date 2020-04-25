@@ -18,5 +18,16 @@
 數據展示 table process tree pagiantion
 其他 button icon
 ```
+# 常用CSS class名
+```
+包裹類： container, wrapper, outer, inner, box, header, footer, main, content, aside, page, section, block
 
+狀態類： primary, secondary, success, danger, warning, info, error, Link, light, dark, disabled, active, checked, loading
+
+尺寸類： large, middle, small, bigger, smaller
+
+元件類： card, list, picture, carousel, swiper, menu, navs, badge, hint, modal, dialog
+
+位置類： first, last, current, prev, next, forward, back
+```
 
