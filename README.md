@@ -1,7 +1,7 @@
 # commonCss
 共用css模組
+# 常用規範(bem命名)
 ```
-常用規範(bem命名)
    block element modifier包含多個單詞時,用一個中劃線-鏈接,
    例如el-dropdown-menu el-buttonblock和element用雙下劃線__鏈接,
    例如表單項 form__item 
@@ -10,6 +10,7 @@
    例如默認：el-button--default 成功：el-button--success用js控製樣式時,
    css命名用is-開頭,例如is-success、is-failed、is-disabled
 ```
+# 常用的元素名
 ```
 表單元素 form form-item input select radio checkbox switch rate datePicker
 導航元素 nav subnav menu tab
