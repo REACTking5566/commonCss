@@ -45,6 +45,6 @@
 人物類： avatar, name, age, post, intro
 ```
 
-[This link](http://example.net/) has no title attribute.
+[This link](https://github.com/xieranmaya/blog/issues/9) flex shirnk grow 計算方式
 
 
