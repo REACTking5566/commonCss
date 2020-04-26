@@ -45,6 +45,6 @@
 人物類： avatar, name, age, post, intro
 ```
 
-[This link](https://github.com/xieranmaya/blog/issues/9) flex shirnk grow 計算方式
+[flex shirnk grow 計算方式](https://github.com/xieranmaya/blog/issues/9)
 
 
