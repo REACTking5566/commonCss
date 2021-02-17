@@ -30,7 +30,7 @@
 ```
 # 常用CSS class名
 ```
-包裹類： container, wrapper, outer, inner, box, header, footer, main, content, aside, page, section, block
+包裹類： container, wrapper, outer, inner, box, header, footer, main, content, aside, page, section, block,
 
 狀態類： primary, secondary, success, danger, warning, info, error, Link, light, dark, disabled, active, checked, loading
 
@@ -43,6 +43,8 @@
 文字類： title, desc, content, date, author, category，label，tag
 
 人物類： avatar, name, age, post, intro
+
+表單類
 ```
 
 [flex shirnk grow 計算方式](https://github.com/xieranmaya/blog/issues/9)
